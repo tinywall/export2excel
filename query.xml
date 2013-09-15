@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<export>
+	<excel name="report.xls">
+		<sheet name="test">
+			<report name="Test data">
+				<query>
+					<sql>
+						select * from test
+					</sql>
+				</query>
+				<fields>
+					<field name="ID" type="column" datatype="number" width="50">id</field>
+					<field name="Name" type="column" datatype="text" width="50">name</field>
+				</fields>
+			</report>
+		</sheet>
+	</excel>
+</export>

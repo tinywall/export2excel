@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+	<inputfiles>
+		<file>query.xml</file>
+	</inputfiles>
+	<constants>
+		<constant name="$date">28-06-2012</constant>
+		<constant name="$sysdate">'27-jun-2012'</constant>
+	</constants>
+	<database>
+		<vendor>mysql</vendor>
+		<!-- <path>jdbc:oracle:thin:@192.168.0.1:1521:test</path> -->
+		<path>jdbc:mysql://localhost:3306/test</path>
+		<username>root</username>
+		<password></password>
+		<!-- <driver>oracle.jdbc.driver.OracleDriver</driver> -->
+		<driver>com.mysql.jdbc.Driver</driver>
+	</database>
+</config>

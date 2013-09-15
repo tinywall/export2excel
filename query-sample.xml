@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<export>
+	<excel name="report.xls">
+		<sheet name="test count2">
+			<report name="report for $date">
+				<query>
+					<sql>
+						select * from table where trunc(creation_time)=$sysdate
+					</sql>
+				</query>
+				<fields>
+					<field name="Column1" type="column" width="100">COLUMN</field>
+					<field name="ID" type="column" width="100">USER_ID</field>
+					<field name="Name" type="column" datatype="text" width="50">NAME</field>
+				</fields>
+			</report>
+		</sheet>
+		<sheet name="test count2">
+			<report name="Label without report" type="label"></report>	
+			<report name="another report">
+				<query>
+					<sql>
+						select * from table
+					</sql>
+				</query>
+				<fields>
+					<field name="Column Title 1" type="column" datatype="number" width="100" suffix="Nos." prefix="Total of ">COLUMN1</field>
+					<field name="Column Title 2" type="column" datatype="text" width="50" prefix="S:">COLUMN2</field>
+				</fields>
+			</report>
+		</sheet>
+	</excel>
+</export>
