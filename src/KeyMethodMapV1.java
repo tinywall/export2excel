@@ -1,7 +1,7 @@
-package lib;
+package src;
 /**
  * Title:	    Export Excel file from Database using XML input.
- * Class:	    KeyMethodMapV1
+ * Class:	    ExportExcelV01
  * Description: Export Excel file from Database using XML input.
  * @author  	ArunDavid
  * @version  	1.0

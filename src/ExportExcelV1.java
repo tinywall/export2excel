@@ -1,7 +1,7 @@
-package lib;
+package src;
 /**
  * Title:	    Export Excel file from Database using XML input.
- * Class:	    ExportExcelV1
+ * Class:	    ExportExcelV01
  * Description: Export Excel file from Database using XML input.
  * @author  	ArunDavid
  * @version  	1.0
@@ -24,10 +24,11 @@ public class ExportExcelV1 {
 			Element rootNode = document.getRootElement();
 			List inputs = rootNode.getChild("inputfiles").getChildren("file");
 			List constants = rootNode.getChild("constants").getChildren("constant");
-			
+			Element style = rootNode.getChild("style");
 			ExportTableV1 et=new ExportTableV1(constants);
 			Element database=rootNode.getChild("database");
 			et.connectDb(database);
+			et.setStyle(style);
 			for (int i = 0; i < inputs.size(); i++) {
 				Element input = (Element) inputs.get(i);
 				et.export(input.getText());

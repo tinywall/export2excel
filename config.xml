@@ -7,6 +7,15 @@
 		<constant name="$date">28-06-2012</constant>
 		<constant name="$sysdate">'27-jun-2012'</constant>
 	</constants>
+	<style>
+		<topPadding>2</topPadding>
+		<leftPadding>2</leftPadding>
+		<headTextColor>0,0,0</headTextColor>
+		<titleTextColor>0,0,0</titleTextColor>
+		<titleBackgroundColor>255,255,255</titleBackgroundColor>
+		<fieldTextColor>0,0,0</fieldTextColor>
+		<fieldBackgroundColor>255,255,255</fieldBackgroundColor>
+	</style>
 	<database>
 		<!-- <path>jdbc:oracle:thin:@192.168.0.1:1521:test</path> -->
 		<path>jdbc:mysql://localhost:3306/test</path>
